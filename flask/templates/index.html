@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <form action="http://127.0.0.1:5000/grade/" method="POST">
+
+        <p>Math <input type="text" name="Math_Grade" placeholder="0-100" class="myInput" oninput="clicked(this)"></p>
+        <p>Bio <input type="text" name="Bio_Grade" placeholder="0-100" class="myInput" oninput="clicked(this)"></p>
+        <p>Chemo <input type="text" name="Chemo_Grade" placeholder="0-100" class="myInput" oninput="clicked(this)">
+        </p>
+        <p id="note"></p>
+        <input type="submit" value="SUBMIT" id="submit_btn">
+
+    </form>
+
+
+    <!-- {% if mk == 'admin'%}
+    <h1> hello {{mk}}! welcome Back!</h1>
+    </form> -->
+    <!-- {% else %}
+    <h1>how are you {{mk}}</h1>
+    {% endif %} -->
+</body>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+</html>

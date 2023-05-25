@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href=" {{url_for('static', filename='css/login.css')}} ">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="http://127.0.0.1:5000/loginInfo/" method="POST">
+            <input name="UserId" type="text" placeholder="Username" oninput="clicked()" id="userId" required>
+            <input name="passId" type="password" placeholder="Password" oninput="clicked()" id="passId" required>
+            <input type="submit" value="Login" id="smbtn">
+        </form>
+        <p><a href="http://127.0.0.1:5000/signUp/">Create new account? sign-Up</a></p>
+
+        <div id="error-message"></div>
+    </div>
+
+</body>
+<script src="{{url_for('static', filename='js/login.js')}}"></script>
+
+</html>

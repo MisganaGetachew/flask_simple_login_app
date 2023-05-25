@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sign Up Page</title>
+    <link rel="stylesheet" href=" {{url_for('static', filename='css/login.css')}} ">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="http://127.0.0.1:5000/signUpInfo/" method="POST">
+            <input name="UserId" type="text" placeholder="Username" oninput="clicked()" id="userId" required>
+            <input name="passId" type="password" placeholder="Password" oninput="clicked()" id="passId" required>
+            <input type="password" placeholder="Confirm Password" oninput="clicked1()" id="passIdconfirm" required>
+            <input type="submit" value="Sign Up" id="smbtn">
+        </form>
+        <p><a href="\">Already have account? Login</a></p>
+
+        <div id="error-message"></div>
+    </div>
+
+</body>
+<script src="{{url_for('static', filename='js/login3.js')}}"></script>
+
+</html>
